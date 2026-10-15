@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket de caisse</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/ticket.css">
+</head>
+<body>
+<nav class="nav-cours">
+    <a href="index.html">Accueil</a>
+    <a href="exo_calculatrice.html">Calculatrice</a>
+    <a href="ticket.html" aria-current="page">Ticket de caisse</a>
+</nav>
+
+<h1>Ticket de caisse</h1>
+
+<div class="saisie">
+    <label for="article"></label><input id="article" type="text" placeholder="Article">
+    <label for="prix"></label><input id="prix" type="number" step="0.01" min="0" placeholder="Prix unitaire">
+    <label for="quantite"></label><input id="quantite" type="number" min="1" value="1">
+    <button id="btn-ajouter">Ajouter</button>
+</div>
+<p id="message"></p>
+
+<p id="date-ticket"></p>
+<ul id="ticket"></ul>
+<p id="vide">Le ticket est vide.</p>
+
+<p id="total">Total : 0.00 €</p>
+<p id="livraison">Encore 50.00 € pour la livraison gratuite.</p>
+
+<button id="btn-vider">Vider le ticket</button>
+
+<script src="../js/ticket.js"></script>
+</body>
+</html>

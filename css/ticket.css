@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    max-width: 40rem;
+}
+.saisie input {
+    margin-right: 0.5rem;
+}
+#quantite {
+    width: 4rem;
+}
+#ticket li {
+    margin: 0.4rem 0;
+}
+#ticket li button {
+    margin-left: 0.75rem;
+}
+#total {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.erreur {
+    color: crimson;
+}
+.gratuite {
+    color: seagreen;
+    font-weight: bold;
+}
+.cache {
+    display: none;
+}
