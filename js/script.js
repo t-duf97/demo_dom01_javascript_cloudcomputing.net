@@ -4,7 +4,6 @@ const titre = document.getElementById('titre');
 const paragraphe = document.querySelector('.intro');
 const bouton1 = document.getElementById('bouton1');
 const bouton2 = document.getElementById('bouton2');
-
 const premierItem = document.querySelector('li');
 
 
@@ -35,3 +34,30 @@ premierItem.addEventListener('click', function(){
         premierItem.textContent = premierItem.textContent + ' (selectionné)';
     }
 });
+
+
+
+const champNote = document.getElementById('note');
+const boutonEvaluer = document.getElementById('evaluer');
+const paragrapheAppreciation = document.getElementById('appreciation');
+
+
+boutonEvaluer.addEventListener('click', function(){
+    const note = champNote.value === '' ? null : champNote.value;
+    let appreciation;
+
+    if (note === null) {
+        paragrapheAppreciation.textContent = 'Aucune note encodée!';
+    } else {
+        if (note >= 18) {
+            appreciation = 'Excellent!';
+        } else if (note >= 14) {
+            appreciation = 'Bien';
+        } else if(note >= 10) {
+            appreciation = 'Suffisant!'
+        } else {
+            appreciation = 'Insuffisant';
+        }
+        paragrapheAppreciation.textContent = `${note}/20 : ${appreciation}`;
+    }
+})
