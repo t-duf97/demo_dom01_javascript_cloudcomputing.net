@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation de cinéma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Réservation de cinéma</h1>
+  <p id="compte-a-rebours"></p>
+
+  <form id="form-reservation">
+    <label>Film : <input type="text" name="film"></label><br>
+    <label>Nombre de places : <input type="number" name="places"></label><br>
+    <label>Prix par place (€) : <input type="number" name="prix" step="0.01"></label><br>
+    <label>Type de séance :
+      <select name="seance">
+        <option value="2d">2D</option>
+        <option value="3d">3D</option>
+        <option value="imax">IMAX</option>
+        <option value="vip">Salle VIP</option>
+      </select>
+    </label><br>
+    <button type="submit">Réserver</button>
+  </form>
+
+  <p id="message"></p>
+
+  <ul id="reservations"></ul>
+  <p id="total"></p>
+
+  <script src="script-bonus.js"></script>
+</body>
+</html>
